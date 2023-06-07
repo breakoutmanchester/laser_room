@@ -25,3 +25,16 @@
 1.  **Laser Pin** = Pin on the Arduino the laser are attached to
 2.  **Laser Num** = Each laser is assigned a number
 3.  **Sensor Pin** = Pin on the Arduino the sensor are attached to
+
+------------
+### Troubleshooting
+
+## Testing Sensors and Lasers
+
+When testing the sensors you should use the 'sketch_may31a.ino' file and run this with the 'sensor_test.py' python code. The Python program will display all the lasers that aren't alligned correctly. If no problems occur, text displaying 'All good :)' will appear. However, you do not need the Python file to test the Lasers, instead just run the Arduino code as normal and use Serial to see the output.
+
+------------
+
+## Configuration & Setup
+
+Approximately half of the Lasers and half of the sensors are powered by the laptop and a external power supply (5V) due to voltage issue which caused the relays to 'stick' in turn causing the lasers to stay ON when they shouldn't. Green lasers need to be powered by an external power supply not the Arduino if there is quite a bit of load on the Arduino already because they draw much more current than the red lasers.
